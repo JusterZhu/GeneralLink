@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GeneralLink.Kernel.Netty
 {
-    internal class NettyProvider : IProvider
+    internal class NettyProvider : ProviderAbstract
     {
     }
 }

@@ -4,17 +4,17 @@ namespace GeneralLink.Kernel.Builder
 {
     internal abstract class GeneralLinkBuilderAbstract : IGeneralLinkBuilder
     {
-        public IGeneralLinkBuilder Remove(IProvider provider)
+        public IGeneralLinkBuilder Remove(ProviderAbstract provider)
         {
             throw new NotImplementedException();
         }
 
-        public IGeneralLinkBuilder Use(IProvider provider)
+        public IGeneralLinkBuilder Use(ProviderAbstract provider)
         {
             throw new NotImplementedException();
         }
 
-        public IGeneralLinkBuilder UseIf(IProvider provider)
+        public IGeneralLinkBuilder UseIf(ProviderAbstract provider)
         {
             throw new NotImplementedException();
         }
