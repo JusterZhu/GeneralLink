@@ -1,25 +1,13 @@
 ﻿namespace GeneralLink.Kernel.Provider
 {
-    internal abstract class ProviderAbstract : IProvider
+    internal abstract class ProviderAbstract<TProvider, TParameter> : IProvider
     {
-        ProviderAbstract IProvider.GetResult()
-        {
-            throw new NotImplementedException();
-        }
+        internal abstract TProvider SetParameter(TParameter parameter);
 
-        ProviderAbstract IProvider.Launch()
-        {
-            throw new NotImplementedException();
-        }
+        internal abstract TProvider Launch();
 
-        Task<ProviderAbstract> IProvider.LaunchTaskAsync()
-        {
-            throw new NotImplementedException();
-        }
+        internal abstract Task<TProvider> LaunchTaskAsync();
 
-        ProviderAbstract IProvider.SetParameter<T>(T parameter)
-        {
-            throw new NotImplementedException();
-        }
+        internal abstract TProvider GetResult();
     }
 }

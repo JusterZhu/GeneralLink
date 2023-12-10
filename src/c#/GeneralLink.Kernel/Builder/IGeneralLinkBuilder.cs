@@ -3,10 +3,10 @@ namespace GeneralLink.Kernel.Builder
 {
     internal interface IGeneralLinkBuilder
     {
-        IGeneralLinkBuilder Use(ProviderAbstract provider);
+        IGeneralLinkBuilder Use(IProvider provider);
 
-        IGeneralLinkBuilder UseIf(ProviderAbstract provider);
+        IGeneralLinkBuilder UseIf(IProvider provider);
 
-        IGeneralLinkBuilder Remove(ProviderAbstract provider);
+        IGeneralLinkBuilder Remove(IProvider provider);
     }
 }
