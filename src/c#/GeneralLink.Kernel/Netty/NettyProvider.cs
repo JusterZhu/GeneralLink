@@ -12,12 +12,12 @@ namespace GeneralLink.Kernel.Netty
     {
         internal override NettyProvider GetResult()
         {
-            throw new NotImplementedException();
+            return this;
         }
 
         internal override NettyProvider Launch()
         {
-            throw new NotImplementedException();
+            return this;
         }
 
         internal override Task<NettyProvider> LaunchTaskAsync()
@@ -27,7 +27,7 @@ namespace GeneralLink.Kernel.Netty
 
         internal override NettyProvider SetParameter(BuildeParameter parameter)
         {
-            throw new NotImplementedException();
+            return this;
         }
     }
 }
