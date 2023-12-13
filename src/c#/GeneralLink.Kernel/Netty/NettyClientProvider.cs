@@ -8,24 +8,24 @@ using System.Threading.Tasks;
 
 namespace GeneralLink.Kernel.Netty
 {
-    internal class NettyProvider : ProviderAbstract<NettyProvider, BuildeParameter>
+    internal class NettyClientProvider : ProviderAbstract<NettyClientProvider, BuildeParameter>
     {
-        internal override NettyProvider GetResult()
+        internal override NettyClientProvider GetResult()
         {
             return this;
         }
 
-        internal override NettyProvider Launch()
+        internal override NettyClientProvider Launch()
         {
             return this;
         }
 
-        internal override Task<NettyProvider> LaunchTaskAsync()
+        internal override Task<NettyClientProvider> LaunchTaskAsync()
         {
             throw new NotImplementedException();
         }
 
-        internal override NettyProvider SetParameter(BuildeParameter parameter)
+        internal override NettyClientProvider SetParameter(BuildeParameter parameter)
         {
             return this;
         }
