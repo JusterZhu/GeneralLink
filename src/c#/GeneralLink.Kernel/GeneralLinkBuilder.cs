@@ -15,5 +15,7 @@ namespace GeneralLink.Kernel
         {
 
         }
+
+        internal GeneralLinkBuilder Builder() { return this; }
     }
 }
